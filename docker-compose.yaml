@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  tests:
+    build: ./docker/php
+    volumes:
+      - .:/usr/src/myapp
+    command: "./vendor/bin/phpunit --bootstrap vendor/autoload.php tests"
