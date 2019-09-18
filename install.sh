@@ -2,3 +2,5 @@
 
 docker-compose run tests composer install
 sudo chown ${USER}:${USER} -R ./
+
+./test.sh
