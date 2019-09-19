@@ -92,17 +92,17 @@ class PrimeNumberRecognitionTest extends TestCase
         $this->assertEquals($number->message, 'number is lower than 2');
     }
 
-    /**
-     * @test
-     */
-    public function outputALoadOfNumbersToSenseCheck()
-    {
-        $numbersToTest = 100;
-        $primeCount = 0;
-        for($n = -10; $n <= $numbersToTest; $n++){
-            $number = new Number($n);
-            echo "\r\nNumber $n: " . ($number->isPrime() ? 'true': 'false - ' . $number->message);
-        }
-        $this->assertEquals($n, $numbersToTest+1);
-    }
+//    /**
+//     * @test
+//     */
+//    public function outputALoadOfNumbersToSenseCheck()
+//    {
+//        $numbersToTest = 100;
+//        $primeCount = 0;
+//        for($n = -10; $n <= $numbersToTest; $n++){
+//            $number = new Number($n);
+//            echo "\r\nNumber $n: " . ($number->isPrime() ? 'true': 'false - ' . $number->message);
+//        }
+//        $this->assertEquals($n, $numbersToTest+1);
+//    }
 }
